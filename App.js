@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import NavigationBar from 'react-native-navbar';
+import styles from './styles';
 //import PhotoGrid from './icon';
 
 const instructions = Platform.select({
@@ -44,28 +45,6 @@ export default class YasamFirstApp extends Component<Props> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  header: {
-    flex: 1,
-  },
-});
 
 const rightButtonConfig = {
   title: 'Next',
